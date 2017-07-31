@@ -1,0 +1,119 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="suprise.qiuguochao.com.charm">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        //主页
+        <activity
+            android:name="suprise.qiuguochao.com.charm.HomePage.HomePage"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //数独游戏
+        <activity
+            android:name="suprise.qiuguochao.com.charm.Sudoku_game.Sudoku_game"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        //汤姆猫
+        <activity
+            android:name="suprise.qiuguochao.com.charm.Tomcat.Tomcat"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        //幸运大转盘
+        <activity android:name="suprise.qiuguochao.com.charm.FortuneBigWheel.FortuneBigWheel_Choose"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="suprise.qiuguochao.com.charm.FortuneBigWheel.FortuneBigWheel_jiuGongGe1"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="suprise.qiuguochao.com.charm.FortuneBigWheel.FortuneBigWheel_jiuGongGe2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="suprise.qiuguochao.com.charm.FortuneBigWheel.FortuneBigWheel_RouletteKind"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        //魔塔游戏
+        <activity    android:name=".MoTa.activity.LoginActivity" > </activity>
+        <activity    android:name=".MoTa.activity.NewGame01" ></activity>
+        <activity    android:name=".MoTa.activity.GameGY" ></activity>
+        <activity    android:name=".MoTa.activity.LoadingActivity"></activity>
+        //输入法
+        <activity
+            android:name="suprise.qiuguochao.com.charm.Typewriting.Typewriting"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <service android:name="suprise.qiuguochao.com.charm.Typewriting.SoftKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        //算法
+        <activity android:name="suprise.qiuguochao.com.charm.Algorithm.AlgorithmWizard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="suprise.qiuguochao.com.charm.Algorithm.KuaiSuPaiXu"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="suprise.qiuguochao.com.charm.Algorithm.MaoPaoPaiXu"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        //悬浮窗
+        <service android:name="suprise.qiuguochao.com.charm.SuspendedWindow.SuspendedWindowService"></service>
+        //sqlite数据库
+        <activity android:name="suprise.qiuguochao.com.charm.SQLiteHelper.SQLTest_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <!-- begin: baidu speech sdk-->
+        <!--
+            离线功能指南：
+            1. 在百度语音开放平台注册应用，http://yuyin.baidu.com/app
+            2. 为您的应用的“申请离线授权页面”，填写程序包名
+            3. 在当前应用的AndroidManifest.xml中填写相应的APP_ID（或在代码中设置appid参数）
+            4. 根据场景下载并集成相应的资源，见http://yuyin.baidu.com/docs/asr/131和http://yuyin.baidu.com/asr/download
+
+            另外需要注意的是离线功能只是在线功能的“增强”，不能永久不联网使用（特别是首次使用）。
+        -->
+        <!-- 请填写真实的APP_ID API_KEY SECRET_KEY -->
+        <meta-data android:name="com.baidu.speech.APP_ID" android:value="9318718"/>
+        <meta-data android:name="com.baidu.speech.API_KEY" android:value="D0TGR74EwicM8GFiv7zKOXfb"/>
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="3699ef9820fe33e358143ed7f7a761de"/>
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" />
+        <activity
+            android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.baidu.action.RECOGNIZE_SPEECH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- end : baidu speech sdk-->
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

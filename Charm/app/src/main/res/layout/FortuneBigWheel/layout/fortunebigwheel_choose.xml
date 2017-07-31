@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_bigWheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你相信你的人品吗？" />
+
+    <Button
+        android:id="@+id/btn_jiugongge1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="人品爆发吧！" />
+
+    <Button
+        android:id="@+id/btn_jiugongge2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不能再倒霉了！" />
+
+    <TextView
+        android:id="@+id/textView_testCpp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="~~~~~~" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <!-- Application. -->
+    <string name="app_name">Charm</string>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <declare-styleable name = "LuckyView">
+        <attr name = "size" format = "integer"></attr>
+    </declare-styleable>
+
+    <item name="id_circle_menu_item_image" type="id"/>
+    <item name="id_circle_menu_item_text" type="id"/>
+    <item name="id_circle_menu_item_center" type="id"/>
+
+    <!-- Title for Latin keyboard  -->
+    <string name="ime_name">我的输入法</string>
+
+    <!-- Symbols that are commonly considered word separators in this language -->
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+
+    <!-- Labels on soft keys -->
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+
+    <!--算法相关-->
+    <string name="KuaiSuPaiXu_Principle">首先分治思想在于将比基准数大的数全放到它的右边，小于或等于它的数全放到它的左边。再对左右区间重复比较，直到各区间只有一个数。而挖坑填数的思想更加妙，就是在数列中第一个数作为第一坑，然后从最右往左找填坑数（比第一坑小则符合，因为第一个数在左边，左边是堆放比基准数小的位置），并让填坑数的位置形成一个新坑（因为它自己去把别人的坑填了，而且它是最右开始的，说明这个位置的数一定要比基准数大），接着从左往右找填坑数（比第一坑大则符合，原理同上），一直重复填坑的过程，直到左右相遇，这个坑就是准备给第一个坑的。这个就是基准数。快速排序时间复杂度下界为O(nlogn)，最坏情况为O(n^2)。快速排序的平均时间复杂度为O(nlogn)。空间复杂度S(1)。</string>
+    <string name="MaoPaoPaiXu_Principle">以从小到大排序举例：设数组长度为N。
+1．比较相邻的前后二个数据，如果前面数据大于后面的数据，就将二个数据交换。
+2．这样对数组的第0个数据到N-1个数据进行一次遍历后，最大的一个数据就“沉”到数组第N-1个位置。
+3．N=N-1，如果N不为0就重复前面二步，否则排序完成。
+可优化成：设置一个标志，如果这一趟发生了交换，则为true，否则为false。明显如果有一趟没有发生交换，说明排序已经完成。
+再做进一步的优化:如果有100个数的数组，仅前面10个无序，后面90个都已排好序且都大于前面10个数字，那么在第一趟遍历后，最后发生交换的位置必定小于10，且这个位置之后的数据必定已经有序了，记录下这位置，第二次只要从数组头部遍历到这个位置就可以了。
+冒泡排序毕竟是一种效率低下的排序方法，在数据规模很小时，可以采用。数据规模比较大时，最好用其它排序方法
+最差的时间复杂度为：O( n^2 )；平均的时间复杂度为：O( n^2 )；
+空间复杂度为：O(n)；平均的空间复杂度为：O(1)。</string>
+
+    <!-- 汤姆猫相关之欢迎语 -->
+    <string-array name="welcome_tips">
+        <item>主人，我在此等候多时了</item>
+        <item>主人，近来一切可好</item>
+        <item>主人，我想死你了</item>
+        <item>欢迎归来，我亲爱的主人</item>
+        <item>我是语音助手，很高兴为您服务</item>
+    </string-array>
+    <!-- 汤姆猫相关之沉思状 -->
+    <string-array name="think_tips">
+        <item>容我三思</item>
+        <item>想想先</item>
+        <item>别着急，我想想</item>
+        <item>这问题好难，我思考一下</item>
+        <item>主人，这问题太难了，我想想</item>
+    </string-array>
+</resources>

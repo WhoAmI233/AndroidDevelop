@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" 
+    android:background="#000"
+    >
+    <AbsoluteLayout
+        android:id="@+id/parentAbs"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_x="0dp"
+    	android:layout_y="0dp"
+        >
+    <ImageView
+        android:id="@+id/imageviewlog"
+        android:layout_width="228dp"
+        android:layout_height="106dp"
+        android:layout_x="49dp"
+        android:layout_y="119dp"
+        android:src="@drawable/logo" 
+        />
+
+    <LinearLayout
+        android:layout_width="147dp"
+        android:layout_height="200dp"
+        android:layout_x="92dp"
+        android:layout_y="250dp"
+        android:orientation="vertical" 
+        >
+        <TextView
+            android:id="@+id/tvNewGame"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="新游戏"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvHelp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="音乐:ON"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvGY"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="关于"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvClose"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="退出"
+            android:textSize="20sp" />
+    </LinearLayout>
+</AbsoluteLayout>
+</AbsoluteLayout>

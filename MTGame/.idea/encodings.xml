@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/activity/GameGY.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/activity/LoadingActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/activity/LoginActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/activity/NewGame01.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/drawimgarr/DrawImageArr.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/entity/Actor.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/entity/Npc.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/manager/ImgArrManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/manager/MyBitMapManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/manager/SoundManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/DMessageView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/DrawDoorImage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/DrawGuaiWuImage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/DrawableGameScreenBg.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/GameView001.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/ShopAndNpcSayView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/TiaoCengAndGWInfoView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bdqn/hr/view/ZhanDouView.java" charset="GBK" />
+  </component>
+</project>

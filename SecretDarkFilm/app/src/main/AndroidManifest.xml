@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.hyf.notepad"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/bird"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".FileListActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="编辑视图"
+            android:name=".EditActivity" >
+        </activity>
+        <activity 
+            android:label="密码视图"
+            android:name=".PasswordActivity"></activity>
+        <activity 
+            android:label="设置密码视图"
+            android:name=".SetPasswordActivity"></activity>     
+            <activity 
+            android:label="暗拍视图"
+            android:theme="@android:style/Theme.Translucent"
+            android:name=".HiddenCamera"></activity>     
+    </application>
+    <!-- sdcard 中 创建与删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- sdcard 中 写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+</manifest>
