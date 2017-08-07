@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_openTypewriting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启人生篇章" />
+
+    <Button
+        android:id="@+id/btn_stopTypewriting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="闲看花开花落" />
+
+    <Button
+        android:id="@+id/btn_ChoosePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图里见真章" />
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="有容乃大"/>
+</LinearLayout>
